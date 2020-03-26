@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content%}
+<img src="static/cases_vs_reltime.png" class="img-fluid" alt="Responsive image">
+{% for post in posts %}
+
+
+
+<article class="media content-section">
+    <div class="media-body">
+        <div class="article-metadata">
+            <a class="mr-3">{{ post.author }}</a>
+            <small class="text-muted">{{ post.date_posted}}</small>
+            <h2><a class="article-title">{{ post.title }}</a></h2>
+
+            <div class="control">
+                <form action="/forecast">
+                    <input class='myButton' type="submit" value="refresh"/>
+                </form>
+            </div>
+            <a class="text-muted" href="https://github.com/CSSEGISandData/COVID-19">John Hopkins Dataset</a>
+        </div>
+    </div>
+</article>
+{% endfor %}
+
+<div class="chart" id="bargraph">
+    <script>
+        var graphs = {{plot | safe}};
+        Plotly.plot('bargraph',graphs,{});
+    </script>
+</div>
+
+<footer>
+  <small class="text-muted">Updated by: Steve & Adi </small>
+  <small class="text-muted">Contact information: <a href="ghazani.aydan@gmail.com">
+  ghazani.aydan@gmail.com</a>.</small>
+</footer>
+{% endblock content%}
+
+

@@ -1,0 +1,173 @@
+html { font-size: 62.5%; }
+body { font-size: 1em;}
+
+@media (max-width: 300px) {
+    html { font-size: 70%; }
+}
+
+@media (min-width: 500px) {
+    html { font-size: 80%; }
+}
+
+@media (min-width: 700px) {
+    html { font-size: 120%; }
+}
+
+@media (min-width: 1200px) {
+    html { font-size: 200%; }
+}
+
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+.bg-steel {
+  background-color: #5f788a;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+
+.article-title {
+  color: #444444;
+  font-size: 50%
+
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.search-box{
+position:absolute;
+top:50%;
+left:50%;
+transform:  translate(-50%,-50%);
+background:#2f3640;
+height:40px;
+border-radius:40px;
+}
+
+.search-box:hover > .search-txt{
+width:240px;
+padding:0 6px;
+
+
+}
+
+.search-box:hover> .search-btn{
+background:white;
+}
+
+.search-btn{
+color:#6495ED;
+float:right;
+width:40px;
+height:40px;
+border-radius:50%;
+background:#2f3640;
+display:flex;
+justify-content: center;
+align-items:center;
+
+}
+
+.search-txt{
+border:none;
+background:none;
+outline:none;
+float:left;
+padding: 0;
+color:  white;
+font-size:16px;
+transition:0.4s;
+line-height:40px;
+width:0px;
+}
+
+.myButton {
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
